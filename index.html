@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taufik Adriansah`s Portfolio</title>
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .hover-tilt:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+
+      #about {
+        scroll-margin-top: 64px;
+        /* Sesuaikan dengan tinggi navbar */
+      }
+
+      /* Tambahkan CSS untuk hamburger menu */
+      .mobile-menu {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .desktop-menu {
+          display: none;
+        }
+
+        .mobile-menu {
+          display: block;
+        }
+
+        #mobile-menu {
+          display: none;
+        }
+
+        #mobile-menu.open {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="bg-slate-800 py-4 fixed w-full z-10">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <div class="text-2xl font-bold"><a href="www.linkedin.com/in/taufik-adriansyah" target="_blank">Fikdev</a></div>
+        <!-- Desktop Menu -->
+        <ul class="desktop-menu flex space-x-6">
+          <li>
+            <a href="#about" class="hover:text-sky-500 transition">About</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="hover:text-sky-500 transition"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-sky-500 transition"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="assets/CV-TaufikAdriansyah.pdf" download="CV-TaufikAdriansyah">
+              <button class="hover:text-sky-600 font-semibold" type="button">
+                Download CV
+              </button>
+            </a>
+          </li>
+        </ul>
+        <!-- Hamburger Button -->
+        <button
+          id="hamburger-button"
+          class="mobile-menu text-2xl focus:outline-none"
+        >
+          <span class="sr-only">Open menu</span>
+          &#9776;
+        </button>
+        <div
+          id="mobile-menu"
+          class="mobile-menu absolute top-16 right-0 bg-slate-800 w-full text-center"
+        >
+          <ul class="flex flex-col space-y-4 py-4">
+            <li>
+              <a href="#about" class="hover:text-sky-500 transition"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="hover:text-sky-500 transition"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-sky-500 transition"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a href="assets/CV-TaufikAdriansyah.pdf" download="CV-TaufikAdriansyah">
+                <button
+                  class="hover:text-sky-600 font-semibold"
+                  type="button"
+                >
+                  Download CV
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="relative bg-gradient-to-b from-blue-600 to-slate-900 text-center h-screen flex flex-col justify-center items-center"
+    >
+      <img
+        src="assets/foto.jpeg"
+        alt="Profile Photo"
+        class="w-32 h-32 rounded-full object-cover mb-6 border-4 border-white mt-6"
+      />
+      <h1 class="text-3xl font-extrabold lg:text-6xl md:text-4xl">
+        Haii haii halloo! <br> Aku Taufik Adriansah`S
+      </h1>
+      <h1 class="typed mt-4 font-semibold h-16 text-2xl"></h1>
+      <a
+        href="#portfolio"
+        class="mt-10 inline-block px-10 py-4 bg-sky-500 text-white font-semibold rounded-lg shadow-md hover:bg-sky-600 transition duration-300"
+        >Explore My Work</a>
+    </section>
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-extrabold">About Me</h2>
+        <p class="mt-6 text-lg text-gray-400">
+          I am a passionate and dedicated student currently pursuing a degree in Informatics at Politeknik IDN. My journey into the world of technology began in high school, where I was first introduced to coding through a data science workshop at PPTIK ITB. Since then, I have cultivated my skills in web development, mastering HTML, CSS, and JavaScript through self-study and various online courses.
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+          <img
+            src="https://logos-download.com/wp-content/uploads/2017/07/HTML5_badge.png"
+            alt="Skill 1"
+            class="w-16 h-16"
+          />
+          <img
+            src="https://logos-download.com/wp-content/uploads/2024/01/CSS3_Logo-700x794.png"
+            alt="Skill 2"
+            class="w-16 h-16"
+          />
+          <img
+            src="https://logos-download.com/wp-content/uploads/2019/01/JavaScript_Logo-700x700.png"
+            alt="Skill 3"
+            class="w-16 h-16"
+          />
+          <img
+            src="https://febryann.my.id/public/images/skills/logo_tailwind.png"
+            alt="Skill 4"
+            class="w-16 h-16"
+          />
+          <img
+            src="https://logos-download.com/wp-content/uploads/2016/09/PHP_logo-700x368.png"
+            width="80"
+            alt="Skill 4"
+          />
+          <img
+            src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_logotype_emblem-700x626.png"
+            alt="Skill 4"
+            width="70"
+          />
+          <img
+            src="https://logos-download.com/wp-content/uploads/2022/12/Bootstrap_Logo-700x700.png"
+            alt="Skill 4"
+            class="w-16 h-16"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="py-20 bg-gray-900">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-extrabold text-center">My Portfolio</h2>
+        <div
+          class="mt-12 grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover-tilt"
+          >
+            <img
+              src="assets/P1.png"
+              alt="Project 1"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">liga SMK</h3>
+              <p class="mt-4 text-gray-400">
+                Proyek Liga SMK ini adalah aplikasi berbasis web yang dirancang untuk mengelola dan menampilkan informasi terkait liga sekolah menengah kejuruan (SMK).
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover-tilt"
+          >
+            <img
+              src="assets/P2.png"
+              alt="Project 2"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">N-Film</h3>
+              <p class="mt-4 text-gray-400">
+                Proyek ini web yang memungkinkan pengguna untuk menonton film secara gratis. Menggunakan React untuk pengembangan frontend dan Bootstrap untuk styling, aplikasi ini menawarkan pengalaman menonton film yang lancar dan responsif.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover-tilt"
+          >
+            <img
+              src="assets/P3.png"
+              alt="Project 3"
+              class="w-full h-56 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">GiziInformasi</h3>
+              <p class="mt-4 text-gray-400">
+                Proyek ini adalah situs web edukasi yang bertujuan untuk meningkatkan pemahaman pengguna tentang gizi dan pola makan sehat. Dibangun menggunakan HTML, CSS, dan JavaScript dasar
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-20 bg-gray-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-extrabold">Contact Me</h2>
+        <p class="mt-4 text-lg text-gray-400">
+          Let's create something amazing together. Feel free to reach out to me
+          with your ideas or projects.
+        </p>
+        <form action="https://formspree.io/f/xqaznlnw" method="POST" class="mt-8">
+          <div class="grid gap-6 sm:grid-cols-2">
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="Your Name"
+              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-indigo-500 text-white"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-indigo-500 text-white"
+            />
+          </div>
+          <textarea
+            placeholder="Your Message"
+            name="message"
+            required
+            class="w-full mt-6 px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-indigo-500 text-white"
+          ></textarea>
+          <button
+            type="submit"
+            class="mt-6 px-8 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="py-10 bg-gray-900 text-center text-gray-400">
+      <p>&copy; 2024 Fikdev. All rights reserved.</p>
+      <div class="mt-4 space-x-6">
+        <a href="www.linkedin.com/in/taufik-adriansyah" target="_blank" class="hover:text-white">LinkedIn</a>
+        <a href="https://github.com/Fikdev-401" target="_blank" class="hover:text-white">GitHub</a>
+        <a href="https://www.instagram.com/taufikadriansahsaputraa_/" target="_blank" class="hover:text-white">Instagram</a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.17/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburgerButton = document.getElementById("hamburger-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        hamburgerButton.addEventListener("click", () => {
+          mobileMenu.classList.toggle("open");
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+            // Close menu when an item is clicked (optional)
+            if (mobileMenu.classList.contains("open")) {
+              mobileMenu.classList.remove("open");
+            }
+          });
+        });
+      });
+      let typed = new Typed(".typed", {
+        strings: [
+          "CEO - Founder DevJourneyID",
+          "Software Engineer",
+          "Student at IDN Polytechnic",
+        ],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+        showCursor: false,
+      });
+    </script>
+  </body>
+</html>
